@@ -1,0 +1,2 @@
+# sge
+Sistema Gestão Escolar
