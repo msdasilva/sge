@@ -4,7 +4,7 @@
     
         // specify your own database credentials
         const HOST = 'localhost';
-        const DATABASE = "scv";
+        const DATABASE = "sige";
         const USER = "root";
         const PASSWORD = null;
         public $conn;

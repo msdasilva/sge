@@ -7,7 +7,7 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 include_once '../shared/utilities.php';
-include_once '../controller/AlunoController.php';
+include_once '../controller/UsuarioController.php';
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri = explode('/', $uri);
@@ -25,5 +25,5 @@ $requestMethod = $_SERVER["REQUEST_METHOD"];
 
 
 // pass the request method and user ID to the PersonController:
-$alunoController = new AlunoController($requestMethod, $userId);
-$alunoController->APIRESTFULL();
+$usuarioController = new UsuarioController($requestMethod, $userId);
+$usuarioController->APIRESTFULL();
